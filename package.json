@@ -1,0 +1,17 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Making personal website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Max Kelly",
+  "license": "ISC",
+  "dependencies": {
+    "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
