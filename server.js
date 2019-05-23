@@ -1,8 +1,10 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const app = express();
-//Setup environment virables below
-const port = process.env.PORT || 3000;
+//Setup environment variables below
+const port = (process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 app.engine('handlebars', exphbs ({
     defaultLayout: 'main'
