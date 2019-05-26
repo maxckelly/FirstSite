@@ -8,11 +8,11 @@ app.engine('handlebars', exphbs ({
     defaultLayout: 'main'
 }));
 
-app.use(express.static ("public")); 
-//This links to the public folder then links to the css style sheet.
-
 app.set('view engine', 'handlebars');
 // setup express static public folder for css and js and images
+
+app.use(express.static ("public")); 
+//This links to the public folder then links to the css style sheet.
 
 app.get('/', (req, res ) => {
     res.render('home');
