@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Eldor Togaymurotov",
+  "author": "Max Kelly",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
