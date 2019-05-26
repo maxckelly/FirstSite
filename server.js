@@ -2,7 +2,6 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const app = express();
 //Setup environment varibles 
-const port = process.env.PORT || 3000;
 
 app.engine('handlebars', exphbs ({
     defaultLayout: 'main'
@@ -11,8 +10,10 @@ app.engine('handlebars', exphbs ({
 app.set('view engine', 'handlebars');
 // setup express static public folder for css and js and images
 
-app.use(express.static ("public")); 
+app.use(express.static ('public')); 
 //This links to the public folder then links to the css style sheet.
+
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res ) => {
     res.render('home');
