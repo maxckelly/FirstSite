@@ -24,6 +24,10 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+app.get('/styleguide', (req, res) => {
+    res.render('styleguide');
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
