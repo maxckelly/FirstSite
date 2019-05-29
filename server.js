@@ -23,7 +23,7 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact');
 });
-
+// this is the styleguide route handler
 app.get('/styleguide', (req, res) => {
     res.render('styleguide');
 });
